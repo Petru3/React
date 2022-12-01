@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+body{
+    background: #eee;
+    margin: 0 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+form{
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
+
+img{
+    width: 200px;
+    height: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    padding: 0.5em 2em;
+}
+
+.button-logout{
+    color: #ff0000;
+    padding: 0 1em;
+}
+
+input[type=text], input[type=password], input[type=email]{
+    text-align: center;
+    padding: 1em 2em;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2.25em;
+}
+
+h3{
+    font-size: 1.75em;
+}
+
+h4{
+    font-size: 1.25em;
+}
+
+h5{
+    font-size: 1em;
+}
+
+h6{
+    font-size: 0.75em;
+}
+
+@import "pages/not_found.style.css";
+
+@import "pages/dashboard.style.css";
+@import "pages/erasmusjournal.style.css";
+
+@import "components/headerCss/header.css";
+@import "components/footerCss/footer.css";
+
+@import "./pages/home/home.style.css";
+@import "./pages/login/style.css";
+@import "./pages/vocabulary/all.css";
+@import "./pages/course/course.style.css";

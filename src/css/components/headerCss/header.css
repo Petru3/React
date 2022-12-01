@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  z-index: 10;
+  top: 0%;
+  position: fixed;
+  background: #eee;
+  opacity: 1;
+  width: 100%;
+  height: 5em;
+}
+nav .nav-list-left {
+  position: absolute;
+}
+nav .nav-list-left a img {
+  padding: 4%;
+  padding-left: 5em;
+  position: relative;
+  width: 80%;
+  min-width: 50%;
+  height: 80%;
+}
+nav .nav-list-right {
+  position: relative;
+  float: right;
+  right: 5em;
+  display: inline-flex;
+  margin-top: 1.75em;
+}
+nav .nav-list-right li {
+  padding-left: 5em;
+}
+nav .nav-list-right li a {
+  text-decoration: none;
+  color: #111;
+  font-size: clamp(1rem, 1rem - 10vw, 1rem);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+nav .nav-list-right li a:hover {
+  color: rgb(146, 146, 146);
+  text-shadow: 0px 1px 11px rgb(255, 255, 255);
+}
+nav .nav-list-right button {
+  border: #212121 solid 0.5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 0.8rem;
+  padding: 4px;
+  color: #212121;
+}
+nav .nav-list-right button:hover {
+  border: #b6b6b6 solid 0.5px;
+  color: #b6b6b6;
+}/*# sourceMappingURL=header.css.map */

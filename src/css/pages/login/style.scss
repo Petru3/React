@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding:0;
+}
+// Importing Fonts
+//Inter light 300
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+//Stop
+
+
+$bodyColor : #EEEEEE;
+$whiteeeee: #fff;
+$links : #111;
+$white : #f1f1f1;
+$validation-greem: #23DC3D;
+
+// 3 Vectors colors 
+$vec1: #86B3DC;
+$vec2: #2f79BD;
+$vec3: #30abc7;
+
+//Footer
+$backgroundFOOTER : #161616;
+
+//Linear gradient 
+
+//Card1
+$up1:#f65c5e;
+$down1:#cca90e;
+//Card2
+$up2:#f3580b;
+$down2:#8f0c0c;
+//Card
+$up3:#70577f;
+$down3:#2e004a;
+
+// Default 
+
+::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    overflow-x: hidden;
+}
+//
+.login-page{
+    background-color: #EEE;
+    font-size: 16px;
+}
+  
+  article,
+  aside,
+  details,
+  figure,
+  footer,
+  header,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    text-decoration: none;
+  }
+  
+  img {
+    border: none;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+// Animations
+
+@keyframes bgslide{
+    from {
+        left: -100%;
+        width: 0;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        width: 1000px;
+        opacity: 1;
+    }
+}
+//Stop Animations
+.login-page{
+    height:1080px;
+}
+
+.login-page{
+    height: 1080px !important;
+    .bg-illustration{
+        position:absolute;
+        width:53%;
+        height:auto;
+        bottom:10%;
+        left:0%;
+        background-size: cover;
+        -webkit-animation: bgslide 2.3s forwards;
+        animation: bgslide 2.3s forwards;
+
+        clip-path: ellipse(97% 85% at 2% 85%);
+    }
+    form{
+        .input-fields{
+            position: absolute;
+            top: 15%;
+            left:52%;
+            z-index: 10;
+            max-height: 100vh;
+            overflow-Y: auto;
+            margin: 0 auto;
+            width: calc(100% - 52%);
+            .right-part{
+                width: 505px;
+                margin: 0 auto;
+                position: relative;
+                
+                .login-form{
+                    position: relative;
+                    z-index: 15;
+                    margin:0% 0% 0% 0px;
+                    width:400px;
+                    .text{
+                        z-index: 15;
+                        position: relative;
+                        float:right;
+                        text-align: left;
+                        top:0%;
+                        margin-top: 0%;
+                        h1{
+                            margin-top: 100px;
+                            font-size: 3rem;
+                            font-weight: bolder;
+                            font-family: 'Raleway', sans-serif;
+                            font-weight: 300;
+                            letter-spacing: -2.5%;
+                        }
+                        p{
+                            margin-top: 0%;
+                            font-size: 1rem;
+                            font-family: 'Raleway', sans-serif;
+                            font-weight: 300;
+                            letter-spacing: -2.5%;
+                            max-width: 450px;
+                        }
+                    }
+                        .user{
+                            width: 25em;
+                            height:3.75em;
+                            background: #fff;
+                            opacity: 1;
+                            display:grid;
+                            grid-template-columns: 15% 85%;
+                            grid-template-rows: 3.75em;
+
+                            #person-svg{
+                                width:100%;
+                                height:auto;
+                                float: left;
+                                margin-top:10%;
+                                padding-left: 1em;
+                            }
+                            
+                            input{
+                                font-weight: 600;
+                                border-radius: 5px;
+                                color:#000;
+                                opacity: .85;
+                                background: #d4d4d4;
+                                height: auto;
+                                border:none;
+                                text-align: left;
+                                position: relative;
+                                font-size: 1rem;
+                                height:2.75em;
+                                top:0%;
+                                left:0%;
+                                margin:.5em 5%;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                -ms-border-radius: 5px;
+                                -o-border-radius: 5px;
+                            }
+                            input::placeholder{
+                                font-size: 1rem;
+                                font-family: "Raleway", sans-serif;
+                                font-weight: 600;
+                                color:#000;
+                                opacity: 1;
+                                text-indent: 0%;
+                                text-align: left;
+                            }
+                        }
+                        .pass{   
+                            width: 25em;
+                            height:3.75em;
+                            background: #fff;
+                            opacity: 1;
+                            float: left;
+                            display:grid;
+                            grid-template-columns: 15% 85%;
+                            grid-template-rows: 3.75em;
+                            margin-top: 2%;
+    
+                            #pass-svg{
+                                width:100%;
+                                height:auto;
+                                float: left;
+                                margin-top:15%;
+                                padding-left: 1em;
+                            }
+                            
+                            input{
+                                font-weight: 600;
+                                border-radius: 5px;
+                                color:#000;
+                                opacity: .85;
+                                background: #d4d4d4;
+                                height: auto;
+                                border:none;
+                                text-align: left;
+                                position: relative;
+                                margin:0% 0% 0% 0%;
+                                font-size: 1rem;
+                                height:2.75em;
+                                top:0%;
+                                left:0%;
+                                margin:.5em 5%;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                -ms-border-radius: 5px;
+                                -o-border-radius: 5px;
+                            }
+                            input::placeholder{
+                                font-size: 1rem;
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 600;
+                                color:#000;
+                                opacity: 1;
+                            }   
+                        }
+                            }
+                        }
+                        .button-submit{
+                            position: relative;
+                            top:0%;
+                            margin-top: 5%;
+                        }
+                          
+                        button{
+                            justify-content: center;
+                            align-items: center;
+                            border: none;
+                            width:14em;
+                            height:5em;
+                            margin:auto auto;
+                            background: #2f79bd;
+                            border-radius: 186px;
+                            -webkit-border-radius: 186px;
+                            -moz-border-radius: 186px;
+                            -ms-border-radius: 186px;
+                            -o-border-radius: 186px;
+                            box-shadow: inset 0px -26px 98px -16px rgba(0,0,0,0.1);
+                            h3{
+                                font-size: 1.3rem;
+                                color:#f1f1f1;
+                                opacity: 1;
+                                font-family:'Raleway', sans-serif;
+                                font-weight: 600;
+
+                                text-shadow: 0px 0px 16px rgb(250, 250, 250);
+                            }        
+                        }
+                        button:hover{
+                            background: #0b547e;
+                        }
+                        }
+                        }
+                        .checkbox-status{
+                            justify-content: center;
+                            align-items: center;
+                            display: grid;
+                            grid-template-columns: 100px 300px;
+                            grid-template-rows: 1fr;
+                            margin:7% 0% 0% 0%;
+                            .unorder{
+                                .inline-text-group{
+                                    position: relative;
+                                    input{
+                                        text-align: left;
+                                        font-size: 1rem;
+                                        font-weight: 600;
+                                        color:#000;
+                                        font-family:'Raleway', sans-serif;
+                                    }
+                                }
+                            }
+                            .account-profil{
+                               text-align: left;
+                               left:0%;
+                               margin-left: 10%;
+                               
+                                .inline-group{
+                                    position: relative;
+                                    width:auto;
+                                    input{
+                                        text-align:left;
+                                        font-size: 1rem;
+                                        font-weight: 600;
+                                        color:#000;
+                                        font-family:'Raleway', sans-serif;
+                                    }
+                                }
+                            }
+                        }
+                    }

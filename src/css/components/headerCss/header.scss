@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+}
+// Importing fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+// Importing and setting some used colors
+
+$bodyColor : #eee;
+$whiteeeee: #fff;
+$links : #111;
+$white : #f1f1f1;
+
+//Footer
+$backgroundFOOTER : #161616;
+
+nav{
+    z-index: 10;
+    top:0%;
+    position: fixed;
+    background: $bodyColor;
+    opacity: 1;
+    width:100%;
+    height:5em;
+   
+        .nav-list-left{
+            position: absolute;        
+            a{
+                img{
+                    padding: 4%;
+                    padding-left: 5em;
+                    position: relative;
+                    width:80%;
+                    min-width: 50%;
+                    height:80%;
+                }
+            }
+        }
+
+        .nav-list-right{
+            position: relative;
+            float: right;
+            right:5em;
+            display: inline-flex;
+            margin-top:1.75em;
+            
+            li{
+                padding-left:5em;  
+                a{
+                    text-decoration: none;
+                    color: $links;
+                    font-size: clamp(1rem, 1rem - 10vw, 1rem);
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+                a:hover{
+                    color: rgb(146, 146, 146);
+                    text-shadow: 0px 1px 11px rgb(255, 255, 255);
+                }
+            }
+            button{
+                border: #212121 solid .5px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                font-size: .8rem;
+                padding: 4px;
+                color:#212121;
+            }
+            button:hover{
+                border: #b6b6b6 solid .5px;
+                color: #b6b6b6;
+            }
+    }
+}

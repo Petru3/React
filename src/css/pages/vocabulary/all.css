@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.vocabularies-page {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background: #eee;
+}
+.vocabularies-page a {
+  padding-bottom: 100px;
+}
+.vocabularies-page a h2 {
+  position: relative;
+  z-index: 5;
+  margin: 10% 0% 0% 2%;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: rgb(14, 14, 14);
+}
+.vocabularies-page a img {
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  border-radius: 10px 70px 10px 70px;
+  -webkit-border-radius: 10px 70px 10px 70px;
+  -moz-border-radius: 10px 70px 10px 70px;
+  -ms-border-radius: 10px 70px 10px 70px;
+  -o-border-radius: 10px 70px 10px 70px;
+}
+.vocabularies-page a:hover h2 {
+  text-shadow: -10px 70px 25px rgba(83, 83, 83, 0.582), 0px -10px 25px rgba(24, 24, 24, 0.205);
+}
+.vocabularies-page a:hover img {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.vocabularies-page .courses {
+  justify-content: center;
+  padding: 200px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  gap: 50px;
+}/*# sourceMappingURL=all.css.map */
